@@ -1,0 +1,120 @@
+body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+    font-family: Arial, sans-serif; /* Font style */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    padding: 20px;
+    background-color: #1f1f1f; /* Slightly lighter background for the header */
+}
+
+h1 {
+    color: #00ffcc; /* Title color */
+    margin: 0; /* Remove default margin */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+#login-container {
+    max-width: 400px; /* Limit the width */
+    margin: 50px auto; /* Center the login form */
+    padding: 20px;
+    background-color: #1f1f1f; /* Background color for login form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+label {
+    margin: 10px 0 5px; /* Spacing around labels */
+}
+
+input {
+    padding: 10px; /* Input padding */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #333; /* Input background */
+    color: #fff; /* Input text color */
+}
+
+input:focus {
+    outline: none; /* Remove outline */
+    background-color: #444; /* Darker input on focus */
+}
+
+#gauges, #line-charts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-top: 30px; /* Space above the charts */
+}
+
+canvas {
+    max-width: 400px; /* Max width for charts */
+    max-height: 300px; /* Max height for charts */
+    border: 1px solid #00ffcc; /* Border for charts */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #1f1f1f; /* Dark background for charts */
+}
+
+#alert-container {
+    color: #d8000c; /* Dark red text */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-top: 30px; 
+}
+
+#historical-data {
+    width: 300px;
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#data-table th, #data-table td {
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+#data-table th {
+    background-color: #00ffcc;
+}
